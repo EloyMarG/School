@@ -1,0 +1,46 @@
+@model List<Person>
+
+
+
+
+<br />
+<div class="row">
+    <div class="col">
+        <h1>Listado de Estudiantes</h1>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table id="tablaEstudiantes" class="table table-striped">
+            <thead>
+                <tr>
+                    <th><b>ID</b></th>
+                    <th><b>Nombre</b></th>
+                    <th><b>Apellido</b></th>
+                    <th><b>Fecha de entrada</b></th>
+                    <th><b> </b></th>
+                    <th><b> </b></th>
+                    <th><b> </b></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> 
+                       <a asp-controller="estudiantes" asp-action="ficha" asp-route-id="@item.PersonID">@item.PersonID</a>                       
+                    </td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.EnrollmentDate</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }                
+            </tbody>
+        </table>
+    </div>
+</div>
