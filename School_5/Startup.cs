@@ -61,3 +61,29 @@ namespace School_5
         }
     }
 }
+
+
+
+public class Zapatos
+{
+   private string a;
+   private string b;
+   private string c; 
+
+public const string CONSTANT_NAME = "value";
+
+
+public void Saludar()
+{
+    Console.WriteLine($"Adios a todos");
+    Console.WriteLine($"Adios a todos");
+    Console.WriteLine($"Adios a todos");
+    Console.WriteLine($"Adios a todos");
+    Console.WriteLine($"Adios a todos");
+    Console.WriteLine($"Hola");
+    Console.WriteLine($"Adios a todos");
+
+}
+
+
+}
